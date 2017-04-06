@@ -1,0 +1,88 @@
+<ion-view title="用户中心">
+	<ion-nav-buttons side="left">
+    	<div ng-show="!isLogin">
+    			<button class="button button-icon icon ion-android-contact" ng-click="openLoginModal('#/app/userCenter/home')"></button>
+    	</div>
+  		<div ng-show="isLogin">  		
+    		<button class="button button-icon icon ion-power" ng-click="logout()"></button>
+    	</div>
+  		</ion-nav-buttons>
+  		<ion-nav-buttons side="right">
+     		<!-- <button class="button button-icon ion-more" ng-click="toolPopover.show($event)"></button> -->
+     		<button class="button button-icon icon ion-more"
+            		ns-popover
+           	 		ns-popover-template="main/templates/ngTools.html"
+            		ns-popover-trigger="click"
+            		ns-popover-theme="ns-popover-list-theme"
+            		ns-popover-placement="bottom|right"
+            		ns-popover-timeout="0.5"></button>
+  	</ion-nav-buttons>
+	<ion-content has-header="true" padding="true">
+		<div class="list">
+			<div class="item item-avatar-left">
+				<img src="userCenter/img/003.jpg">
+				<h2><strong>周小姐</strong></h2>	
+				<p><h4>您今天气色不错，继续坚持！</h4></p>				
+			</div>
+			<div id="u-img" class="item item-image">
+				<!-- <img src="userCenter/img/001.jpg"> -->
+			</div>			
+		</div>
+		<div class="list" align="left">
+			<div class="item item-icon-left item-icon-right" >
+				<i class="icon ion-social-yen assertive"></i>
+				<h3>我的钱包</h3>
+				<i class="icon ion-ios-arrow-right assertive"></i>			
+			</div>
+			<div class="item">
+				<div class="row" align="center">
+					<div class="col">
+						<div>13.00</div>
+						<div>账户余额</div>
+					</div>
+					<div class="col">
+						<div>1个</div>
+						<div>红包</div>
+					</div>
+					<div class="col">
+						<div>100分</div>
+						<div>消费积分</div>
+					</div>
+					<div class="col">
+						<div>0张</div>
+						<div>银行卡</div>
+					</div>
+				</div>							
+			</div>	
+		</div>
+		<div class="list">		
+			<div class="item item-icon-left item-icon-right">
+				<i class="icon ion-ios-list positive"></i>
+				<h3>我的订单</h3>
+				<i class="icon ion-ios-arrow-right positive"></i>	
+			</div>
+			<div class="item item-icon-left item-icon-right">
+				<i class="icon ion-archive balanced"></i>
+				<h3>我的退款</h3>
+				<i class="icon ion-ios-arrow-right balanced"></i>
+			</div>
+			<div class="item item-icon-left item-icon-right">				
+				<i class="icon ion-card energized"></i>
+				<h3>我的发票</h3>
+				<i class="icon ion-ios-arrow-right energized"></i>
+			</div>			
+		</div>		
+		<div class="list">
+			<div class="item item-icon-left item-icon-right" ng-click="">
+				<i class="icon ion-compose royal"></i>
+				<h3>意见反馈</h3>
+				<i class="icon ion-ios-arrow-right royal"></i>
+			</div>			
+			<div class="item item-icon-left item-icon-right" ng-click="gotoURL('#/app/userCenter/settings')">
+				<i class="icon ion-android-settings dark"></i>
+				<h3>设置</h3>
+				<i class="icon ion-ios-arrow-right dark"></i>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

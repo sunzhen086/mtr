@@ -1,0 +1,49 @@
+<ion-view title="欢  迎  您！">
+ 	<ion-nav-bar class="bar bar-positive">
+    	<ion-nav-buttons side="left">
+    		<button class="button button-icon icon ion-android-contact" ng-click="loginPopover.show($event)"></button>
+  		</ion-nav-buttons>
+  		<ion-nav-buttons side="right">    
+    		<button class="button button-icon ion-more" ng-click="toolPopover.show($event)"></button>
+  		</ion-nav-buttons>
+  	</ion-nav-bar>
+	
+	<ion-tabs class="tabs-icon-top tabs-color-active-positive">	
+		<!-- MyLife Tab -->
+		<ion-tab title="我的生活" icon-off="ion-ios-pulse"	icon-on="ion-ios-pulse-strong" href="#/app/home/1">
+			<ion-view>
+				<ion-content>
+				<p><h>My Life Home</h></p>
+				</ion-content>
+			</ion-view>
+		</ion-tab>
+		
+		<!-- Travel Tab -->
+		<ion-tab title="旅游" icon-off="ion-ios-speedometer-outline"	icon-on="ion-ios-speedometer" href="#/app/home/2">
+			<ion-view>
+				<ion-content>
+				<p><h>Travel Home</h></p>
+				</ion-content>
+			</ion-view>
+		</ion-tab> 
+		
+		<!-- Hotel Tab -->
+		<ion-tab title="酒店" icon-off="ion-ios-keypad-outline" icon-on="ion-ios-keypad" href="#/app/home/3">
+			<ion-view>
+				<ion-content>
+				<p><h>Hotel Home</h></p>
+				</ion-content>
+			</ion-view>
+		</ion-tab> 
+		
+		<!-- UserCenter Tab -->
+		<ion-tab title="用户中心" icon-off="ion-ios-person-outline" icon-on="ion-ios-person" href="#/app/home/4">
+			<ion-view>
+				<ion-content>
+				<p><h>User Center Home</h></p>
+				</ion-content>
+			</ion-view>
+		</ion-tab>
+	</ion-tabs>
+
+</ion-view>
