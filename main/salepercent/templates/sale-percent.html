@@ -1,0 +1,44 @@
+<ion-view view-title="大户销量占比情况明细" has-header="true" padding="true">
+	<ion-content style="background-color: #f1f1f1;">
+    	<div class="sale-city" ng-show="isShow">
+    		<div>城市</div>
+    		<div>泰安</div>
+    		<img src="analysis/img/right_arrow.png"/>
+    	</div>
+    	<div class="divider" ng-show="isShow">
+    	</div>
+    	<div id="sale_month" class="sale-month" ng-show="isShow">
+    		<div ng-click="getMonth(year+month)">{{year}}.{{month}}</div>
+    		<img src="order/img/green_left_arrow.png" />
+    		<img src="order/img/green_right_arrow.png" />
+    	</div>
+    	<div class="divider" ng-show="isShow">
+    	</div>
+    	<div class="sale-condition">
+    		<div>订购量</div>
+    		<div>前</div>
+    		<input type="text" placeholder="请输入名次"/>
+    		<div>名</div>
+    	</div>
+    	<div id="show_sale_condition" class="sale-show-hide" ng-click="showSaleCondition()" ng-show="!isShow">显示更多查询条件</div>
+    	<div id="hide_sale_condition" class="sale-show-hide" ng-click="hideSaleCondition()" ng-show="isShow">隐藏更多查询条件</div>
+    	<div class="sale-item" ng-repeat="item in saleList">
+			<div class="sale-item-row1" ng-click="toDetail()">
+				<div>{{item.name}}</div>
+				<div>{{item.type}}</div>
+				<img src="analysis/img/right_arrow.png"/>
+			</div>
+			<div class="sale-item-row2">
+				<div>{{item.data1}}</div>
+				<div>{{item.data2}}</div>
+				<div>{{item.data3}}</div>
+			</div>
+			<div class="sale-item-row3">
+				<div>订购量<br>（条）</div>
+				<div>单条值<br>（元）</div>
+				<div>订购规格数<br>（个）</div>
+			</div>
+		</div>
+		<div style="width: 100%;height: 10px;"></div>
+	</ion-content>
+</ion-view>

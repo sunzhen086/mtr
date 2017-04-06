@@ -1,0 +1,35 @@
+<section class='h-container' ng-app="supply" ng-controller="supplyCtrl">
+	<div class='h-container-header'>
+		<h3 class='header-title'>
+			紧俏货源投放
+		</h3>
+		<em class='header-more'></em>
+	</div>
+
+	<div class='h-container-content'>
+		<div class="main-content-box animate-if" ng-if='supplyConf.small'>
+			<div class='left-content'>
+				<div class="small-chart-box" data-ng-init="smallChartContainerLoad()">
+					<supplyRate class="chart"></supplyRate>
+				</div>
+				<div class='small-chart-title'>
+					<p>全国排名24</p>
+				</div>
+				<div class='small-chart-summary'>
+					紧俏货源投放集中度
+				</div>
+			</div>
+			<article class='right-content'>
+				<section style="margin-top: 20px;">
+					<p class='title'>紧俏货源投放面</p>
+					<p class='value'>52.06%</p>
+				</section>
+				<section class='last-sec'>
+					<p class='title'>TOP50客户订购量占比</p>
+					<p class='value'>52.06%</p>
+				</section>
+			</article>
+		</div>
+		<button class='detail'>{{supplyConf.btnText}}</button>
+	</div>
+</section>

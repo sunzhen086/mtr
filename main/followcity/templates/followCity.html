@@ -1,0 +1,21 @@
+<ion-view view-title="我关注的城市" has-header="true" padding="true">
+	<ion-nav-buttons side="right">
+      <a class="button button-icon icon ion-compose" ng-click="data.showDelete = !data.showDelete; data.showReorder = !data.showReorder"></a>
+    </ion-nav-buttons>
+	<ion-content>
+		<ion-list  show-delete="data.showDelete" show-reorder="data.showReorder" can-swipe="listCanSwipe">
+			<ion-item ng-repeat="item in followCityArr" class="item-remove-animate" ng-click="goCity(item)">
+
+				<h2>{{item.name}}</h2>
+				<ion-delete-button class="ion-minus-circled" ng-click="onItemDelete(item)">
+				</ion-delete-button>
+				<ion-reorder-button class="ion-navicon" on-reorder="onReorderItem(item, $fromIndex, $toIndex)">
+				</ion-reorder-button>
+
+			</ion-item>
+		</ion-list>
+	</ion-content>
+	<div class="addNewFollowCityBtn" ng-controller="citySelectController" ng-click="addNewFollowCity();">
+		<i class="icon ion-plus-round"></i>
+	</div>
+</ion-view>

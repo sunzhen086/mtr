@@ -1,0 +1,13 @@
+.addNewFollowCityBtn{
+	background:lightseagreen;
+	color:#ffffff;
+	width:40px;
+	height:40px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size:26px;
+	position:fixed;
+	right:30px;
+	bottom:80px;
+}

@@ -1,0 +1,9 @@
+.mainpage {
+  font-size: 14px;
+  background-color: #f2f2f2;
+}
+.slider{height:100% }
+.chart{
+	display:block;
+	height:100%;
+}

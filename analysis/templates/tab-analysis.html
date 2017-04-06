@@ -1,0 +1,12 @@
+<ion-view view-title="数据查询" has-header="true" padding="true">
+	<ion-content style="background-color: #f1f1f1;">
+    	<div class="ana-item-content" ng-repeat="item in data">
+	    	<div class="ana-item" ng-click="showMessage()">
+	    		<img ng-src="{{item.image}}" />
+	    		<div>{{item.name}}</div>
+	    		<img src="analysis/img/right_arrow.png" />
+	    	</div>
+	    	<div class="item_divider"></div>
+    	</div>
+	</ion-content>
+</ion-view>

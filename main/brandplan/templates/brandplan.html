@@ -1,0 +1,25 @@
+<section class='h-container' ng-controller="directSaleSupplyCtrl">
+	<div class='h-container-header'>
+		<h3 class='header-title'>
+			品牌规划
+		</h3>
+		<em class='header-more'></em>
+	</div>
+
+	<div class='h-container-content'>
+		<div class="main-content-box animate-if" ng-if='supplyConf.small'>
+			<div class='left-content'>
+				<img ng-src="main/brandplan/img/icon-25.png" style="width:100px;height:100px;float:left;margin-left:40px;"/>
+			</div>
+			<article class='right-content'>
+				<section>
+					<p class='title'>2017年规划品规个数213个<br/>在销品规个数344个</p>
+				</section>
+				<section style="margin-top:20px">
+					<p class='title'>2016年销量低于50箱<br/>且2017年扔在销品规个数<br/>13个</p>
+				</section>
+			</article>
+		</div>
+		<button class='detail'>{{supplyConf.btnText}}</button>
+	</div>
+</section>

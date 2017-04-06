@@ -1,147 +1,96 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width,height=device-height">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title></title>
 		
-		<!-- Lib CSS -->
-		<link href="main/lib/ionic/css/ionic.min.css" rel="stylesheet">
-		<link href="main/css/style.css" rel="stylesheet">
+		<!-- 基础库 -->
+		<link href="lib/ionic/css/ionic.css" rel="stylesheet">
+		<link href="lib/reset.css" rel="stylesheet">
+		<link href="lib/animate.css" rel="stylesheet">
+		<link href="app/css/tabs.css" rel="stylesheet"/>
 		
-		<link href="common/lib/nsPopover/nsPopover.css" rel="stylesheet">		
+		
+		<!-- 首页 -->
+		<link href="main/frame/css/frame.css" rel="stylesheet">
+		<link href="main/dashboard/css/dashboard.css" rel="stylesheet">
+		<link href="main/bigsalerate/css/bigsalerate.css" rel="stylesheet">
+		<link href="main/followcity/css/followCity.css" rel="stylesheet">
+		<link href="main/supplydelivery/css/supply-delivery.css" rel="stylesheet"/>
+		<link href="main/salepercent/css/sale-percent.css" rel="stylesheet"/>
+		
+		<!-- 动态 -->
+		<link href="news/css/tab-news.css" rel="stylesheet" />
+		<link href="news/css/sale-detail.css" rel="stylesheet" />
+		<link href="news/css/online-detail.css" rel="stylesheet" />
+		
+		<!--分析 -->
+		<link href="analysis/css/tab-analysis.css" rel="stylesheet" />
+		
+		<!--订单 -->
+		<link href="order/css/month-order.css" rel="stylesheet"/>
+		<link href="order/css/order-detail.css" rel="stylesheet"/>
 
-		<!-- Lib JS-->
-    	<!-- ionic/angularjs js -->
-   		<script type="text/javascript" src="main/lib/ionic/js/ionic.bundle.min.js"></script>		 
-		 
-		<script type="text/javascript" src="common/lib/nsPopover/nsPopover.js"></script>
-		<script type="text/javascript" src="common/lib/datejs/date.js"></script>		
-		
-		<script type="text/javascript" src="monitor/lib/ngCordova/js/ng-cordova.min.js"></script>
-    	<script type="text/javascript" src="monitor/lib/jQuery/js/jquery-1.11.3.min.js"></script>    
-    	<script type="text/javascript" src="monitor/lib/JPushPlugin/js/JPushPlugin.js"></script>
-		
-		<!-- cordova script (this will be a 404 during development) -->
-		<script type="text/javascript" src="cordova.js"></script>
-		
-		<!-- ###################################################################################################-->	
-		<!-- #######################################               #############################################-->
-		<!-- ####################################### your app's js #############################################-->
-		<!-- #######################################               #############################################-->
-		<!-- ###################################################################################################-->
-		
-		<!-- ####################################### Module main ###############################################-->			
-		<!-- main -->
-		<script type="text/javascript" src="main/js/app.js"></script>
-		<script type="text/javascript" src="main/js/app.routes.js"></script>
-		
-		<!-- directives -->				
-		
-		<!-- filters -->
-		
-		<!-- services -->
-		
-		<!-- controllers -->
-		<script type="text/javascript" src="main/js/controllers/homeController.js"></script>
-		<script type="text/javascript" src="main/js/controllers/prologueController.js"></script>		
-		
-		<!-- ####################################### Module common #############################################-->
-		<!-- main -->
-		<script type="text/javascript" src="common/js/app.js"></script>
-		<script type="text/javascript" src="common/js/app.routes.js"></script>
-		
-		<!-- directives -->				
-				
-		<!-- filters -->		
-		
-		<!-- services -->
-		
-		<!-- controllers -->		
-		
-		<!-- ####################################### Module auth ###############################################-->
-		<!-- main -->
-		<script type="text/javascript" src="auth/js/app.js"></script>
-		<script type="text/javascript" src="auth/js/app.routes.js"></script>
-				
-		<!-- directives -->				
-				
-		<!-- filters -->
-				
-		<!-- services -->
-		<script type="text/javascript" src="auth/js/services/configService.js"></script>
-		<script type="text/javascript" src="auth/js/services/authService.js"></script>
-		<script type="text/javascript" src="auth/js/services/testService.js"></script>
-		
-		<!-- controllers -->
-		<script type="text/javascript" src="auth/js/controllers/loginController.js"></script>
-		
-		<!-- ####################################### Module life ############################################-->
-		<!-- main -->
-		<script type="text/javascript" src="life/js/app.js"></script>
-		<script type="text/javascript" src="life/js/app.routes.js"></script>
-		
-		<!-- directives -->
-		
-		<!-- filters -->
-				
-		<!-- services -->		
-		<script type="text/javascript" src="life/js/services/dummyDataService.js"></script>
-		<script type="text/javascript" src="life/js/services/specialsService.js"></script>	
-		
-		<!-- controllers -->
-		<script type="text/javascript" src="life/js/controllers/lifeHomeController.js"></script>		
-		<script type="text/javascript" src="life/js/controllers/storeDetailController.js"></script>
-		<script type="text/javascript" src="life/js/controllers/foodsController.js"></script>				
-		
-		<!-- ####################################### Module travel ############################################-->
-		<!-- main -->
-		<script type="text/javascript" src="travel/js/app.js"></script>
-		<script type="text/javascript" src="travel/js/app.routes.js"></script>		
-		<!-- directives -->
-		
-		<!-- filters -->
-		
-		<!-- services -->
-		
-		<!-- controllers -->
-		<script type="text/javascript" src="travel/js/controllers/travelHomeController.js"></script>
-		<script type="text/javascript" src="travel/js/controllers/hotelReservationController.js"></script>
 
+		<!-- ionic/angularjs js -->
+		<script src="lib/ionic/js/ionic.bundle.js"></script>
+		<script src="lib/echart/echarts.min.js"></script>
+		<script src="lib/webcomponents/js/datePicker.js"></script>
+
+		<!-- 应用配置 -->
+		<script src="app/js/app.js"></script>
 		
-		<!-- ####################################### Module pick #############################################-->
-		<!-- main -->
-		<script type="text/javascript" src="pick/js/app.js"></script>
-		<script type="text/javascript" src="pick/js/app.routes.js"></script>
-				
-		<!-- directives -->
+		<!-- 首页-->
+		<script src="main/frame/js/frameController.js"></script>
+		<script src="main/frame/js/frameServices.js"></script>
+		<script src="main/frame/js/frameDirective.js"></script>
 		
-		<!-- filters -->
+		<script src="main/dashboard/js/dashboardController.js"></script>
+		<script src="main/dashboard/js/dashboardServices.js"></script>
 		
-		<!-- services -->
+		<script src="main/bigsalerate/js/bigsalerateController.js"></script>
+		<script src="main/bigsalerate/js/bigsalerateServices.js"></script>
 		
-		<!-- controllers -->
-		<script type="text/javascript" src="pick/js/controllers/pickHomeController.js"></script>
+		<script src="main/followcity/js/followCityController.js"></script>
+		<script src="main/followcity/js/followCityServices.js"></script>
+		
+		<script src="main/supplydelivery/js/supply.js"></script>
+		
+		<script src="main/salepercent/js/sale.js"></script>
+		
+		<script src="main/directsalesupply/js/directsalesupplyController.js"></script>
+		
+		<script src="main/brandplan/js/brandPlanController.js"></script>
+		
+		<!-- 动态-->
+		<script src="news/js/news.js"></script>
+		
+		<!-- 分析-->
+		<script src="analysis/js/analysis.js"></script>
+		
+		<!--订单 -->
+		<script src="order/js/order.js"></script>
 		
 		
-		<!-- ####################################### Module userCenter #########################################-->
-		<!-- main -->
-		<script type="text/javascript" src="userCenter/js/app.js"></script>
-		<script type="text/javascript" src="userCenter/js/app.routes.js"></script>
-				
-		<!-- directives -->
-		
-		<!-- filters -->
-		
-		<!-- services -->
-		
-		<!-- controllers -->
-		<script type="text/javascript" src="userCenter/js/controllers/userCenterHomeController.js"></script>
-		<script type="text/javascript" src="userCenter/js/controllers/settingsController.js"></script>
-		<script type="text/javascript" src="userCenter/js/controllers/aboutController.js"></script>
-				
 	</head>
-	<body ng-app="main" ng-controller="auth.loginController">
+
+	<body ng-app="starter">
+
+		<!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+		<ion-nav-bar class="bar-stable">
+			<ion-nav-back-button>
+			</ion-nav-back-button>
+		</ion-nav-bar>
+		<!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
 		<ion-nav-view></ion-nav-view>
 	</body>
+
 </html>

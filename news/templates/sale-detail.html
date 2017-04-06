@@ -1,0 +1,29 @@
+<ion-view view-title="重点城市销售情况" has-header="true" padding="true">
+	<ion-content>
+		<div class="news_tabs">
+	        <div class="tabs_name">
+	            <div id="name_year" class="tab_name" style="color: #14b9ef;" ng-click="toTab1()">年累</div>
+	            <div id="name_month" class="tab_name" ng-click="toTab2()">月累</div>
+	        </div>
+	        <div class="divider"></div>
+	        <div class="tab_bottom">
+	            <div id="sale_tab_bottom1" style="visibility: visible;"></div>
+	            <div id="sale_tab_bottom2" style="visibility: hidden;"></div>
+	        </div>
+	    </div>
+	    <div id="tab1" class="main">
+	        <div class="table_header">
+	            <div class="cell1">城市</div>
+	            <div class="cell2">1-10月销量(万箱)</div>
+	            <div class="cell3">同比增幅(%)</div>
+	        </div>
+	        <div class="divider"></div>
+	
+	        <div class="table_row {{$index%2==0?'odd_row':''}}" ng-repeat="x in data">
+	            <div class="cell1"><span>{{x.city}}</span></div>
+	            <div class="cell2"><span>{{x.no1}}</span></div>
+	            <div class="cell3"><span>{{x.no2}}</span></div>
+	        </div>
+	    </div>
+	</ion-content>
+</ion-view>	

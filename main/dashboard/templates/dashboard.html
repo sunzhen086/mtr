@@ -1,0 +1,28 @@
+<header class='h-container colorful'  ng-controller="dashboardCtrl">
+
+	<div class='place'>
+		<div class='city'>
+			<i class="icon ion-paper-airplane"></i>
+			<i>{{city.name}}</i>
+		</div>
+	</div>
+	
+	<i class="icon ion-plus editFollowCityBtn" ng-click="gotoURL('#/tab/followCity/list')"></i>
+	
+
+	<div class='chart-title'>
+		2017年销售累计情况
+	</div>
+
+	<nav class='month-nav'>
+		<div class='one-month-box' ng-click='changeQuota(item)' ng-class='{active:item.active}' ng-repeat='item in quota'>
+			<p class=''>{{item.value}}</p>
+			<p class=''>{{item.title}}</p>
+			<p class='poit'></p>
+		</div>
+	</nav>
+
+	<div class='chart-box' >
+		<mainchart class="chart"></mainchart>
+	</div>
+</header>

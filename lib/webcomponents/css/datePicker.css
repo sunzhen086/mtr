@@ -1,0 +1,196 @@
+dateheader
+{
+	background: #14b9f0;
+	border: none;
+	color: #333;
+	display: block;
+	height: 46px;
+	left: 0px;
+	padding: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 99999;
+}
+dateheader div:nth-child(1)
+{
+	top: 0px;
+}
+dateheader div:nth-child(2)
+{
+	top: -46px;
+}
+dateheader div
+{
+	top: -46px;
+}
+dateheader .menu-left
+{
+	left: 0px;
+	margin-top: 0px;
+	padding: 0px 0 0 0px;
+	position: relative;
+	text-align: left;
+	z-index: 2;
+	height: 46px;
+}
+dateheader .dateheader-title
+{
+	font-size: 1.7em;
+	line-height: 46px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	height: 46px;
+}
+dateheader .menu-right
+{
+	float: right;
+	position: relative;
+	text-align: right;
+	z-index: 3;
+}
+dateheader img
+{
+	height: 40px;
+	border: 10px solid transparent;
+  	margin-top: 3px;
+  	width: 40px;
+}
+dateheader div.menu-left div.menu-text {
+    color: white;
+    float: left;
+    font-size: 1.4em;
+    line-height: 35px;
+    margin: 5px;
+    position: relative;
+    left: 5px;
+    text-align: left;
+    top: 0px;
+    vertical-align: middle;
+    z-index: 1;
+}
+dateheader div.menu-right div.menu-text{
+	color: #14b9f0;
+	float: right;
+	font-size: 1.4em;
+	line-height: 35px;
+	margin: 5px;
+	position: relative;
+	right: 5px;
+	text-align: center;
+	text-align: right;
+	top: 0px;
+	vertical-align: middle;
+	z-index: 1;
+}
+dateheader>div.dateheader-title{color: #FFFFFF;}
+dateheader>div.menu-right>div.menu-text{color: #FFFFFF;}
+/*滚动条宽度为0，只适用于webkit的手机*/
+::-webkit-scrollbar {width: 0px;}
+.nicky-center{text-align: center; margin: 0 auto;}
+.nicky-bg-white{background-color: #ffffff;}
+.pop-header{  z-index: 999999; }
+div.pop-header>img{position: absolute; top: 8px; left: 10px; width: 30px; height: 30px;}
+div.pop-header>div.pop-title{ color: #ffffff; font-size: 18px; margin-top: 14px;}
+div.pop-header>div.pop-right-text{position: absolute; top: 0; right: 10px; color: #ffffff; font-size: 16px; width: 46px; height: 32px; padding-top: 14px;}
+a.pop-top-MD{position: absolute; top: 0; height: 0;}
+.Modal-Background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+    z-index: 9999;
+}
+.Modal-Background-Gray {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #f4f4f4;
+    z-index: 9999;
+}
+.Modal-Background-Half-Dark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(111, 111, 111, 0.2);
+    z-index: 9999;
+}
+.transparent-bg{background-color: transparent;}
+div.pop-back{position: absolute; top: 6px; left: 10px;}
+div.pop-back::before{
+    content: '';
+    height: 16px;
+    width: 16px;
+    display: block;
+    border: 2px solid #ffffff;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+/*date-picker*/
+div.date-picker-area{
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+div.date-picker-area table.date-table{
+    text-align: center;
+    width: 100px;
+    border: none;
+}
+
+div.date-picker-area table.date-table tr td>input{
+    width: 88px;
+    height: 88px;
+    text-align: center;
+    font-size: 24px;
+    padding: 0;
+    margin: 1px 2px 4px 2px;
+    background-color: #cccccc;
+    color: #646464;
+    border: none;
+}
+div.date-picker-area table.date-table tr td>button{
+    width: 88px;
+    height: 48px;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #b0b0b0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJtJREFUeNrs2bENwyAQBVCwvJc9DWsEjwHT2JNhCktxmSIhhd+XTkB1egKJ4mJrLYxMrTX35XUdt5RSHtl/Cg8LMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDDw9xJLKXlwz7XXcu2PXvvI5nN4D7b+keWG96R/dcPbk550NB/2LQEDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA3+YU4ABAByrGD2xTYNHAAAAAElFTkSuQmCC);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+div.date-picker-area table.date-table tr:nth-child(3) td>button{ 
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAACE4AAAhOAFFljFgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAG9JREFUeNrs2cENwCAIQFE13du6BstSR/DgqbyfMMAL3OiZ2So1WrGAgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYHv9UTEWwq8Zzrpn294VQJ3/2FgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGDgwz4BBgBBNwnFlGFp7AAAAABJRU5ErkJggg==);
+}
+div.date-picker-area table.date-table tr td>button:active{
+    background-color: #dddddd;
+}
+div.date-title{background-color: #f4f4f4; padding: 15px 0 15px 10px; color: #999999; font-size: 12px;}
+div.pop-style>div:nth-child(2){
+    z-index: 999999;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+div.pop-style>div:nth-child(2)>div:nth-child(2){margin-top: 46px;}

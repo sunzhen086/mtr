@@ -1,0 +1,223 @@
+.sale-condition{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	line-height: 50px;
+	font-family: '微软雅黑';
+    font-weight: 550;
+    font-style: normal;
+    font-size: 14px;
+    color: #333333;
+    white-space: nowrap;
+	background-color: #FFFFFF;
+}
+.sale-condition div:nth-child(1){
+	position: absolute;
+	height: 100%;
+	left: 10px;
+}
+.sale-condition div:nth-child(2){
+	position: absolute;
+	height: 100%;
+	right: 144px;
+	color: #999999;
+}
+.sale-condition input{
+	position: absolute;
+	width: 100px;
+	height: 34px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 3px;
+	top: 8px;
+	right: 34px;
+	background-color: #f1f1f1;
+	color: #333333;
+}
+input::-webkit-input-placeholder{
+	color: #999999;
+	font-family: '微软雅黑';
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+}
+.sale-condition div:nth-child(4){
+	position: absolute;
+	height: 100%;
+	right: 10px;
+	color: #999999;
+}
+.sale-show-hide{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: '微软雅黑';
+    font-weight: 550;
+    font-style: normal;
+    font-size: 12px;
+    color: #14b9ef;
+    white-space: nowrap;
+    background-color: #FFFFFF;
+}
+.sale-month{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	background-color: #FFFFFF;
+}
+.sale-month div{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	line-height: 50px;
+	font-family: '微软雅黑';
+    font-weight: 550;
+    font-style: normal;
+    font-size: 14px;
+    color: #14b9ef;
+    white-space: nowrap;
+}
+.sale-month img:nth-child(2){
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+.sale-month img:nth-child(3){
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+.sale-city{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	line-height: 50px;
+	font-family: '微软雅黑';
+    font-weight: 550;
+    font-style: normal;
+    font-size: 14px;
+    color: #333333;
+    white-space: nowrap;
+	background-color: #FFFFFF;
+}
+.sale-city div:nth-child(1){
+	position: absolute;
+	height: 100%;
+	left: 10px;
+}
+.sale-city div:nth-child(2){
+	position: absolute;
+	height: 100%;
+	right: 35px;
+	color: #999999;
+}
+.sale-city img{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 17.5px;
+	right: 10px;
+}
+
+.sale-item{
+	width: 94%;
+	height: 160px;
+	margin-top: 10px;
+	margin-left: 3%;
+	margin-right: 10px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+}
+.sale-item-row1{
+	width: 100%;
+	height: 50px;
+	position: relative;
+	font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+.sale-item-row1 div:nth-child(1){
+	height: 50px;
+	line-height: 50px;
+	color: #333333;
+	position: absolute;
+	left: 10px;
+}
+.sale-item-row1 div:nth-child(2){
+	height: 50px;
+	line-height: 50px;
+	color: #999999;
+	position: absolute;
+	right: 40px;
+}
+.sale-item-row1 img{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 17px;
+	right: 10px;
+}
+
+.sale-item-row2{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 20px;
+	text-align: center;
+	font-family: '微软雅黑';
+    font-weight: 550;
+    font-style: normal;
+    font-size: 16px;
+}
+.sale-item-row2 div:nth-child(1){
+	width: 30%;
+	height: 100%;
+	float: left;
+	border-right: 1px solid #e9e9e9;
+}
+.sale-item-row2 div:nth-child(2){
+	width: 40%;
+	height: 100%;
+	float: left;
+	border-right: 1px solid #e9e9e9;
+}
+.sale-item-row2 div:nth-child(2){
+	width: 38%;
+	height: 100%;
+	float: left;
+}
+.sale-item-row3{
+	width: 100%;
+	height: 50px;
+	line-height: 22px;
+	text-align: center;
+	font-family: '微软雅黑';
+    font-weight: 400;
+    color: #999999;
+    font-style: normal;
+    font-size: 12px;
+}
+.sale-item-row3 div:nth-child(1){
+	width: 30%;
+	height: 100%;
+	float: left;
+	border-right: 1px solid #e9e9e9;
+}
+.sale-item-row3 div:nth-child(2){
+	width: 40%;
+	height: 100%;
+	float: left;
+	border-right: 1px solid #e9e9e9;
+}
+.sale-item-row3 div:nth-child(2){
+	width: 38%;
+	height: 100%;
+	float: left;
+}

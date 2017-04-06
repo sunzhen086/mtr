@@ -1,0 +1,41 @@
+<ion-view view-title="平台上线情况" has-header="true" padding="true">
+	<ion-content>
+    	<div class="news_tabs">
+		    <div class="tabs_name">
+		        <div id="online_name1" class="tab_name" style="color: #14b9ef;" ng-click="toTab1()">表格</div>
+		        <div id="online_name2" class="tab_name" ng-click="toTab2()">图形</div>
+		    </div>
+		    <div class="divider"></div>
+		    <div class="tab_bottom">
+		        <div id="online_tab_bottom1" style="visibility: visible;"></div>
+		        <div id="online_tab_bottom2" style="visibility: hidden;"></div>
+		    </div>
+		</div>
+		<div id="online_tab1" class="main">
+		    <div class="table_header">
+		        <div class="cell1">省份</div>
+		        <div class="cell2">地市公司个数</div>
+		        <div class="cell3">上线运行个数</div>
+		    </div>
+		    <div class="divider"></div>
+		
+		    <div class="table_row {{$index%2==0?'odd_row':''}}" ng-repeat="item in data">
+		        <div class="cell1"><span>{{item.city}}</span></div>
+		        <div class="cell2"><span>{{item.no1}}</span></div>
+		        <div class="cell3"><span>{{item.no2}}</span></div>
+		    </div>
+		
+		</div>
+		<div id="online_tab2" class="main" style="height:100%;display: none;">
+		    <div style="width: 100%;height: 10px;"></div>
+		    <div class="shape_item" ng-repeat="item in data">
+		        <div class="bar_left">{{item.city}}</div>
+		        <div class="bar_right">{{item.no2}}/{{item.no1}}</div>
+		        <div class="bar">
+		            <div class="progress_bg"></div>
+		            <div class="progress" style="width: {{item.percent}}%;"></div>
+		        </div>
+		    </div>
+		</div>
+	</ion-content>
+</ion-view>

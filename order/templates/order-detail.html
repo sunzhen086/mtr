@@ -1,0 +1,20 @@
+<ion-view view-title="订单明细" has-header="true" padding="true">
+	<ion-content style="background-color: #f1f1f1;">
+    	<div class="order-block1"></div>
+		<div class="order-detail-table-header">
+            <div>品牌<br>（规格）</div>
+            <div>需求量<br>（条）</div>
+            <div>合理定量<br>（条）</div>
+            <div>订单量<br>（条）</div>
+        </div>
+        <div class="divider"></div>
+        <div class="order-detail-table-row {{$index%2==0?'odd_row':''}}" ng-repeat="item in data">
+            <div><div>{{item.brand1}}<br>{{item.brand2}}</div></div>
+            <div><span>{{item.data1}}</span></div>
+            <div><span>{{item.data2}}</span></div>
+            <div><span>{{item.data3}}</span></div>
+        </div>
+        <div class="divider">
+    	</div>
+	</ion-content>
+</ion-view>	

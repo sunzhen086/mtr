@@ -1,0 +1,24 @@
+.icon-concern{
+	background: url(../img/concern.png) no-repeat center;
+	background-size: 25px 25px;
+}
+.icon-concern-on{
+	background: url(../img/concern_on.png) no-repeat center;
+	background-size:  25px 25px;
+}
+.icon-news{
+	background: url(../img/news.png) no-repeat center;
+	background-size: 25px 25px;
+}
+.icon-news-on{
+	background: url(../img/news_on.png) no-repeat center;
+	background-size: 25px 25px;
+}
+.icon-analysis{
+	background: url(../img/analysis.png) no-repeat center;
+	background-size: 25px 25px;
+}
+.icon-analysis-on{
+	background: url(../img/analysis_on.png) no-repeat center;
+	background-size: 25px 25px;
+}

@@ -1,0 +1,40 @@
+<section class='h-container' ng-controller="directSaleSupplyCtrl">
+	<div class='h-container-header'>
+		<h3 class='header-title'>
+			直营店紧俏货源供应
+		</h3>
+		<em class='header-more'></em>
+	</div>
+
+	<div class='h-container-content'>
+		<div class="main-content-box animate-if" ng-if='supplyConf.small'>
+			<div class='left-content'>
+				<div class="small-chart-box" data-ng-init="smallChartContainerLoad()">
+					<directSaleSupplyRate class="chart"></directSaleSupplyRate>
+				</div>
+				<div class='small-chart-title'>
+					<p>全国排名17</p>
+				</div>
+				<div class='small-chart-summary'>
+					直营店户均紧俏货源购<br/>
+					进量占比(%)
+				</div>
+			</div>
+			<article class='right-content'>
+				<section>
+					<p class='title'>直营店户数:</p>
+					<p class='value'>7个</p>
+				</section>
+				<section>
+					<p class='title'>所有客户户均紧俏货源购</br>进量占比:</p>
+					<p class='value'>37.75%</p>
+				</section>
+				<section class='last-sec'>
+					<p class='title'>直营店户均购进量：</p>
+					<p class='value'>1863条</p>
+				</section>
+			</article>
+		</div>
+		<button class='detail'>{{supplyConf.btnText}}</button>
+	</div>
+</section>

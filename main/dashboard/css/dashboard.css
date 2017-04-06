@@ -1,0 +1,100 @@
+.h-container {
+	margin-bottom: 10px;
+	background: #fff;
+	background-color: #fff;
+}
+
+.h-container button {
+	border: none;
+	cursor: pointer;
+}
+
+.h-container.colorful {
+	background: linear-gradient(10deg, #4914a7, #2e51b2);
+	padding-top: 20px;
+}
+
+.h-container.colorful .place {
+	height: 50px;
+	border-bottom: 1px solid #715fde;
+}
+
+.h-container.colorful .place .city {
+	text-align: center;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0px auto;
+}
+
+.h-container.colorful .place button {
+	display: block;
+	font-size: 1rem;
+	background-color: #f04f1e;
+	padding: 6px 20px;
+	color: #fff;
+	border-radius: 100px;
+	margin: 20px auto 0px auto;
+}
+
+.h-container.colorful .chart-title {
+	color: #fff;
+	text-align: center;
+	padding: 20px 0px;
+	border-bottom: 1px solid #715fde;
+	font-size: 1rem;
+}
+
+.h-container.colorful .month-nav {
+	padding: 10px 0px;
+	border-bottom: 1px solid #715fde;
+}
+
+.h-container.colorful .month-nav:after {
+	content: '';
+	height: 0px;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+.h-container.colorful .month-nav .one-month-box {
+	width: 33%;
+	text-align: center;
+	font-size: 1rem;
+	float: left;
+}
+
+.h-container.colorful .month-nav .one-month-box p {
+	margin: 10px 0px;
+	color: #a19bd7;
+}
+
+.h-container.colorful .month-nav .one-month-box p.poit {
+	width: 10px;
+	height: 10px;
+	display: none;
+	border-radius: 100%;
+	background-color: #f04f1e;
+}
+
+.h-container.colorful .month-nav .one-month-box.active p {
+	color: #fff;
+}
+
+.h-container.colorful .month-nav .one-month-box.active p.poit {
+	display: inline-block;
+}
+
+.h-container.colorful .chart-box {
+	height: 200px;
+}
+
+.h-container .editFollowCityBtn{
+	color:#ffffff;
+	position:absolute;
+	top:20px;
+	right:20px;
+	font-size:2em;
+	cursor:pointer;
+}

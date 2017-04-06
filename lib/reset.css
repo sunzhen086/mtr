@@ -1,0 +1,105 @@
+@charset "UTF-8";
+html {
+  overflow-y: auto;
+  font-size: 14px; 
+}
+
+body {
+  font-family: "宋体",Helvetica,"SimSun",sans-serif,"Microsoft Yahei";
+  font-size: 13px;
+  color: #515151;
+  background-color: #ffffff; }
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset,
+img {
+  border: 0;
+  vertical-align: top; }
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal; }
+
+li {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%; }
+
+h1 {
+  font-size: 18px; }
+
+h2 {
+  font-size: 16px; }
+
+h3 {
+  font-size: 14px; }
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+input,
+button,
+textarea,
+select {
+  *font-size: 100%; }
+
+select,
+input,
+button,
+textarea {
+  font: 100%; }
+
+table {
+  font-size: inherit;
+  font: 100%; }

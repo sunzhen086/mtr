@@ -1,0 +1,67 @@
+<ion-view view-title="月度订单" has-header="true" padding="true">
+	<ion-content style="background-color: #f1f1f1;">
+    	<div id="order_show" class="order-show-hide" ng-click="showCondition()">显示查询条件</div>
+    	<div id="order_month" class="order-month">
+    		<div ng-click="getMonth(year+month)">{{year}}.{{month}}</div>
+    		<img src="order/img/green_left_arrow.png" />
+    		<img src="order/img/green_right_arrow.png" />
+    	</div>
+    	<div id="order_hide" class="order-show-hide" ng-click="hideCondition()">隐藏查询条件</div>
+    	<div class="divider"></div>
+    	<div class="order-title">
+    		<div>深圳市罗湖区赛和信商行</div>
+    		<div>三十挡</div>
+    	</div>
+    	<div class="news_tabs">
+		    <div class="tabs_name">
+		        <div id="order_name1" class="tab_name" style="color: #14b9ef;" ng-click="toTab1()">订单汇总</div>
+		        <div id="order_name2" class="tab_name" ng-click="toTab2()">订单列表</div>
+		    </div>
+		    <div class="divider"></div>
+		    <div class="tab_bottom">
+		        <div id="order_tab_bottom1" style="visibility: visible;"></div>
+		        <div id="order_tab_bottom2" style="visibility: hidden;"></div>
+		    </div>
+		</div>
+		<div id="order_tab1" style="background-color: #FFFFFF;">
+			<div class="order-block1"></div>
+			<div class="order-table-header">
+	            <div class="order-cell1">品牌<br>（规格）</div>
+	            <div class="order-cell2">批发价<br>（元/条）</div>
+	            <div class="order-cell3">订单数量<br>（条）</div>
+	        </div>
+	        <div class="order-table-header">
+	            <div class="order-cell1">规格数<br>86</div>
+	            <div class="order-cell2">单条值<br>149.91</div>
+	            <div class="order-cell3">合计<br>10000</div>
+	        </div>
+	        <div class="divider"></div>
+	        <div class="order-table-row {{$index%2==0?'odd_row':''}}" ng-repeat="item in data">
+	            <div class="order-cell1"><span>{{item.brand1}}<br>{{item.brand2}}</span></div>
+	            <div class="order-cell2"><span>{{item.price}}</span></div>
+	            <div class="order-cell3"><span>{{item.count}}</span></div>
+	        </div>
+		</div>
+		<div id="order_tab2" class="main" style="display: none;">
+			<div class="order-item" ng-repeat="item in orderList">
+				<div class="order-item-row1" ng-click="toDetail()">
+					<div>订单编号:{{item.order_id}}</div>
+					<div>{{item.order_type}}</div>
+					<img src="analysis/img/right_arrow.png"/>
+				</div>
+				<div class="order-item-date">{{item.order_date}}</div>
+				<div class="order-item-row2">
+					<div>{{item.order_data1}}</div>
+					<div>{{item.order_data2}}</div>
+					<div>{{item.order_data3}}</div>
+				</div>
+				<div class="order-item-row3">
+					<div>订购量<br>（条）</div>
+					<div>单条值<br>（元）</div>
+					<div>订购规格数<br>（个）</div>
+				</div>
+			</div>
+			<div style="width: 100%;height: 10px;"></div>
+		</div>
+	</ion-content>
+</ion-view>	

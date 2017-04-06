@@ -1,0 +1,11 @@
+<ion-view hide-nav-bar=true>
+	<ion-content scroll="false" >
+		<ion-slide-box active-slide=slideActive>
+			<ion-slide ng-repeat="item in followCity">
+              	<ion-content style="height:100%" scroll="true"　 class="mainpage" >
+					<slide-page clist=followCity index=$index></slide-page>
+				</ion-content>
+           </ion-slide> 
+		</ion-slide-box>
+	</ion-content>
+</ion-view>
